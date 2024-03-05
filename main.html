@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onselectstart="return false" >
+    <h1>kalkulator BMI</h1>
+    <main>
+        <div id="informacje" class="blok">
+            <h3>
+                Czym jest BMI
+            </h3>
+            <p>
+                BMI jest jednym z ważnych wskaźniów określających nasz stan fizyczny, ale niestety nie wystarczającym. Bardzo ważnym uzupełnieniem BMI jest wskaźnik ilości tłuszczu brzusznego - zbyt duży może oznaczać niebezpieczną otyłość brzuszną i to nawet przy prawidłowym BMI! Ponadto, paradoksalnie, badania naukowe wskazują, że osoby z lekką nadwagą zwykle są zdrowsze i żyją dłużej od osób z tzw. "prawidłową wagą". Pojawiają się nawet głosy, że ustalony arbitralnie przez WHO próg nadwagi (25) jest zbyt niski.
+
+            </p>     
+        </div>
+        
+        <div id="obliczenia" class="blok">
+            <h3>
+                Oblicz swoje BMI</h3>
+                <p>Waga: <input type="text" id="waga">kg</p>
+                <p>wzrost: <input type="text" id="wzrost">cm</p>
+                <button onclick="oblicz()">Oblicz</button>
+                <p id="wynik"></p>
+                <p id="slownie"></p>
+        </div>
+            
+        <div id="wzkazniki" class="blok">
+
+            <h3>wzkaźniki <br></h3>
+
+        mniej niż 16 - wygłodzenie <br>
+        16 - 16.99 - wychudzenie <br>
+        17 - 18.49 - niedowaga <br>
+        18.5 - 24.99 - wartość prawidłowa <br>
+        25 - 29.99 - nadwaga <br>
+        30 - 34.99 - I stopień otyłości <br>
+        35 - 39.99 - II stopień otyłości <br>
+        powyżej 40 - otyłość skrajna <br>
+        </div>
+            
+        
+    </main>
+</body>
+</html>
